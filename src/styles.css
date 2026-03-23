@@ -1,0 +1,164 @@
+:root {
+  font-family: 'Noto Sans JP', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #1f2937;
+  background: #f3f4f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f4f6;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  margin: 0 auto;
+  min-height: 100vh;
+  max-width: 430px;
+  padding: 16px 16px 88px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.app-header p {
+  margin: 8px 0 0;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.app-main {
+  margin-top: 16px;
+}
+
+.page-section h2 {
+  margin: 0 0 8px;
+}
+
+.page-description {
+  margin: 0 0 12px;
+  color: #4b5563;
+  font-size: 0.92rem;
+}
+
+.card-list {
+  display: grid;
+  gap: 12px;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-main h3,
+.detail-card h3 {
+  margin: 0 0 4px;
+}
+
+.card-main p {
+  margin: 0;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  border: none;
+  border-radius: 9999px;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.form {
+  display: grid;
+  gap: 10px;
+}
+
+.form label {
+  display: grid;
+  gap: 4px;
+  font-size: 0.9rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 10px;
+  font: inherit;
+}
+
+.detail-card dl {
+  margin: 8px 0 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 6px 12px;
+}
+
+.detail-card dt {
+  font-weight: 700;
+}
+
+.detail-card dd {
+  margin: 0;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 430px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}
+
+.bottom-nav-link {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  border-radius: 10px;
+  color: #4b5563;
+  background: #f9fafb;
+}
+
+.bottom-nav-link.active {
+  color: #1d4ed8;
+  background: #dbeafe;
+  font-weight: 700;
+}
+
+.empty-state {
+  margin: 0 0 12px;
+  color: #374151;
+}
